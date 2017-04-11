@@ -35,14 +35,48 @@
                             <constraint firstItem="O0T-q2-lA4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ueA-Lq-2Im"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Q5u-Fz-46t"/>
+                    <tabBarItem key="tabBarItem" title="NoDI" id="Q5u-Fz-46t"/>
                     <connections>
                         <outlet property="addResultView" destination="O0T-q2-lA4" id="LBn-Iz-krL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.2" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1020" y="-210"/>
+        </scene>
+        <!--SimpleDI-->
+        <scene sceneID="Ddb-4f-i3h">
+            <objects>
+                <viewController id="hrO-QU-p68" customClass="SimpleDIViewController" customModule="DependencyInjectionExperiments" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0k5-o2-cPm"/>
+                        <viewControllerLayoutGuide type="bottom" id="pBl-Jv-0J2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HK9-eG-hSa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbu-OB-ooE" customClass="AddResultView" customModule="DependencyInjectionExperiments" customModuleProvider="target">
+                                <rect key="frame" x="24" y="292" width="327" height="83.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tbu-OB-ooE" firstAttribute="centerX" secondItem="HK9-eG-hSa" secondAttribute="centerX" id="RK9-Fy-G6H"/>
+                            <constraint firstItem="tbu-OB-ooE" firstAttribute="centerY" secondItem="HK9-eG-hSa" secondAttribute="centerY" id="W7B-oT-xib"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tbu-OB-ooE" secondAttribute="trailing" constant="8" id="udv-E0-9Lq"/>
+                            <constraint firstItem="tbu-OB-ooE" firstAttribute="leading" secondItem="HK9-eG-hSa" secondAttribute="leadingMargin" constant="8" id="xJw-gN-Ick"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SimpleDI" id="f4e-38-T5H"/>
+                    <connections>
+                        <outlet property="addResultView" destination="tbu-OB-ooE" id="3YT-eG-H7U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lT2-zo-0ej" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018" y="455"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SbU-VS-nxj">
@@ -55,6 +89,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="aYY-PV-TX6"/>
+                        <segue destination="hrO-QU-p68" kind="relationship" relationship="viewControllers" id="QMo-bQ-RNA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rr5-Mf-vvt" userLabel="First Responder" sceneMemberID="firstResponder"/>

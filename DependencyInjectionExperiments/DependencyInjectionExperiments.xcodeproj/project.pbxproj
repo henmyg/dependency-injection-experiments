@@ -16,6 +16,8 @@
 		B581200A1E9B86BF00A3F405 /* AddResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58120091E9B86BF00A3F405 /* AddResultView.swift */; };
 		B581200C1E9B86F400A3F405 /* NibBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581200B1E9B86F400A3F405 /* NibBacked.swift */; };
 		B581200E1E9B871300A3F405 /* AddResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B581200D1E9B871300A3F405 /* AddResultView.xib */; };
+		B58120101E9D18B900A3F405 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581200F1E9D18B900A3F405 /* Database.swift */; };
+		B58120121E9D199300A3F405 /* SimpleDIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58120111E9D199300A3F405 /* SimpleDIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B58120091E9B86BF00A3F405 /* AddResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddResultView.swift; path = CustomViews/AddResultView.swift; sourceTree = "<group>"; };
 		B581200B1E9B86F400A3F405 /* NibBacked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NibBacked.swift; path = CustomViews/NibBacked.swift; sourceTree = "<group>"; };
 		B581200D1E9B871300A3F405 /* AddResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddResultView.xib; path = CustomViews/AddResultView.xib; sourceTree = "<group>"; };
+		B581200F1E9D18B900A3F405 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Database.swift; path = BusinessLogic/Database.swift; sourceTree = "<group>"; };
+		B58120111E9D199300A3F405 /* SimpleDIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleDIViewController.swift; path = ViewControllers/SimpleDIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				B58120031E9B849900A3F405 /* BusinessLogic.swift */,
+				B581200F1E9D18B900A3F405 /* Database.swift */,
 			);
 			name = BusinessLogic;
 			sourceTree = "<group>";
@@ -86,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B58120061E9B865D00A3F405 /* NoDIViewController.swift */,
+				B58120111E9D199300A3F405 /* SimpleDIViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -173,6 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58120101E9D18B900A3F405 /* Database.swift in Sources */,
+				B58120121E9D199300A3F405 /* SimpleDIViewController.swift in Sources */,
 				B58120071E9B865D00A3F405 /* NoDIViewController.swift in Sources */,
 				B581200A1E9B86BF00A3F405 /* AddResultView.swift in Sources */,
 				B5811FF11E9B83EC00A3F405 /* AppDelegate.swift in Sources */,

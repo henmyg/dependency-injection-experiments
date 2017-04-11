@@ -8,6 +8,11 @@
 
 import Foundation
 
+protocol Database {
+    func integer(forKey key: String) -> Int
+    func set(integer: Int, forKey key: String) -> Void
+}
+
 class NoDIBusinessLogic {
     private let userDefaultsKey = "NoDINumberKey"
     
@@ -19,6 +24,28 @@ class NoDIBusinessLogic {
         let old = UserDefaults.standard.integer(forKey: userDefaultsKey)
         let result = old + new
         UserDefaults.standard.setValue(result, forKey: userDefaultsKey)
+        
+        return result
+    }
+}
+
+class DIBusinessLogic {
+    
+    private let userDefaultsKey = "NoDINumberKey"
+    private let database: Database
+    
+    init(database: Database) {
+        self.database = database
+    }
+    
+    public var number: Int {
+        return self.database.integer(forKey: userDefaultsKey)
+    }
+    
+    public func addToAndSave(newNumber new: Int) -> Int {
+        let old = self.database.integer(forKey: userDefaultsKey)
+        let result = old + new
+        self.database.set(integer: result, forKey: userDefaultsKey)
         
         return result
     }
