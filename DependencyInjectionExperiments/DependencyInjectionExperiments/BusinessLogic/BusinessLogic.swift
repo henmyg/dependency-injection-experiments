@@ -13,7 +13,12 @@ protocol Database {
     func set(integer: Int, forKey key: String) -> Void
 }
 
-class NoDIBusinessLogic {
+protocol BusinessLogic {
+    var number: Int { get }
+    func addToAndSave(newNumber new: Int) -> Int
+}
+
+class NoDIBusinessLogic: BusinessLogic {
     private let userDefaultsKey = "NoDINumberKey"
     
     public var number: Int {
@@ -29,7 +34,7 @@ class NoDIBusinessLogic {
     }
 }
 
-class DIBusinessLogic {
+class DIBusinessLogic: BusinessLogic {
     
     private let userDefaultsKey = "NoDINumberKey"
     private let database: Database
