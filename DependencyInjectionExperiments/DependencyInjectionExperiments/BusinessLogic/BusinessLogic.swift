@@ -47,6 +47,7 @@ class DIBusinessLogic: BusinessLogic {
         return self.database.integer(forKey: userDefaultsKey)
     }
     
+    @discardableResult
     public func addToAndSave(newNumber new: Int) -> Int {
         let old = self.database.integer(forKey: userDefaultsKey)
         let result = old + new
