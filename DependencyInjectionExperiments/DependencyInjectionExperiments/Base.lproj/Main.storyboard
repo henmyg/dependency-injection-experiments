@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7tf-K9-Q73">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7tf-K9-Q73">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1025" y="-542"/>
+            <point key="canvasLocation" x="1084" y="123"/>
         </scene>
         <!--SimpleDI-->
         <scene sceneID="Ddb-4f-i3h">
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lT2-zo-0ej" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="123"/>
+            <point key="canvasLocation" x="1767" y="122"/>
         </scene>
         <!--FactoryDI-->
         <scene sceneID="dqP-eE-7X6">
@@ -110,7 +110,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m20-tA-VkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="793"/>
+            <point key="canvasLocation" x="2449" y="122"/>
+        </scene>
+        <!--PresentationControlDI-->
+        <scene sceneID="EHG-se-nqN">
+            <objects>
+                <viewController id="qyH-Rj-9vi" customClass="PresentationControlViewControl" customModule="DependencyInjectionExperiments" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SBE-aI-9R3"/>
+                        <viewControllerLayoutGuide type="bottom" id="h1G-jb-fb7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jas-HL-efU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfj-ew-HVj" customClass="AddResultView" customModule="DependencyInjectionExperiments" customModuleProvider="target">
+                                <rect key="frame" x="8" y="292" width="359" height="83.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qfj-ew-HVj" secondAttribute="trailing" constant="8" id="N1y-EJ-ok0"/>
+                            <constraint firstItem="qfj-ew-HVj" firstAttribute="leading" secondItem="Jas-HL-efU" secondAttribute="leading" constant="8" id="Zs7-nY-Ozf"/>
+                            <constraint firstItem="qfj-ew-HVj" firstAttribute="centerX" secondItem="Jas-HL-efU" secondAttribute="centerX" id="cAM-Hb-c2d"/>
+                            <constraint firstItem="qfj-ew-HVj" firstAttribute="centerY" secondItem="Jas-HL-efU" secondAttribute="centerY" id="jJk-sy-STt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="PresentationControlDI" id="Eo5-MJ-aF8"/>
+                    <connections>
+                        <outlet property="presentationControl" destination="LPI-iO-ifE" id="Z8o-2t-k8B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwN-4u-BKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="LPI-iO-ifE" customClass="PresentationControl" customModule="DependencyInjectionExperiments" customModuleProvider="target">
+                    <connections>
+                        <outlet property="addResultView" destination="qfj-ew-HVj" id="yJq-Hj-mXX"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="3143" y="122"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SbU-VS-nxj">
@@ -118,6 +157,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7tf-K9-Q73" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="V7V-mA-JIY">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -125,6 +165,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="aYY-PV-TX6"/>
                         <segue destination="hrO-QU-p68" kind="relationship" relationship="viewControllers" id="QMo-bQ-RNA"/>
                         <segue destination="0gt-MY-hn2" kind="relationship" relationship="viewControllers" id="PkV-FE-ICr"/>
+                        <segue destination="qyH-Rj-9vi" kind="relationship" relationship="viewControllers" id="7D0-zC-S1I"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rr5-Mf-vvt" userLabel="First Responder" sceneMemberID="firstResponder"/>

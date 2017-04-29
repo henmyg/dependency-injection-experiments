@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B501261A1EB521C00094AFAA /* PresentationControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50126191EB521C00094AFAA /* PresentationControl.swift */; };
 		B5811FF11E9B83EC00A3F405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5811FF01E9B83EC00A3F405 /* AppDelegate.swift */; };
 		B5811FF61E9B83EC00A3F405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5811FF41E9B83EC00A3F405 /* Main.storyboard */; };
 		B5811FF81E9B83EC00A3F405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5811FF71E9B83EC00A3F405 /* Assets.xcassets */; };
@@ -20,9 +21,11 @@
 		B58120121E9D199300A3F405 /* SimpleDIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58120111E9D199300A3F405 /* SimpleDIViewController.swift */; };
 		B58120161E9D2C6B00A3F405 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58120151E9D2C6A00A3F405 /* Factory.swift */; };
 		B581201A1E9D2E8000A3F405 /* FactoryDIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58120191E9D2E8000A3F405 /* FactoryDIViewController.swift */; };
+		B581201E1E9D465900A3F405 /* PresentationControllerViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581201D1E9D465900A3F405 /* PresentationControllerViewControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B50126191EB521C00094AFAA /* PresentationControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentationControl.swift; path = PresentationControls/PresentationControl.swift; sourceTree = "<group>"; };
 		B5811FED1E9B83EC00A3F405 /* DependencyInjectionExperiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DependencyInjectionExperiments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5811FF01E9B83EC00A3F405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5811FF51E9B83EC00A3F405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		B58120111E9D199300A3F405 /* SimpleDIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleDIViewController.swift; path = ViewControllers/SimpleDIViewController.swift; sourceTree = "<group>"; };
 		B58120151E9D2C6A00A3F405 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		B58120191E9D2E8000A3F405 /* FactoryDIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FactoryDIViewController.swift; path = ViewControllers/FactoryDIViewController.swift; sourceTree = "<group>"; };
+		B581201D1E9D465900A3F405 /* PresentationControllerViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentationControllerViewControl.swift; path = ViewControllers/PresentationControllerViewControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 		B5811FEF1E9B83EC00A3F405 /* DependencyInjectionExperiments */ = {
 			isa = PBXGroup;
 			children = (
+				B581201F1E9D471300A3F405 /* PresentationControls */,
 				B58120081E9B868D00A3F405 /* CustomVIews */,
 				B58120051E9B863600A3F405 /* ViewControllers */,
 				B58120021E9B846200A3F405 /* BusinessLogic */,
@@ -98,6 +103,7 @@
 				B58120061E9B865D00A3F405 /* NoDIViewController.swift */,
 				B58120111E9D199300A3F405 /* SimpleDIViewController.swift */,
 				B58120191E9D2E8000A3F405 /* FactoryDIViewController.swift */,
+				B581201D1E9D465900A3F405 /* PresentationControllerViewControl.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -110,6 +116,14 @@
 				B581200D1E9B871300A3F405 /* AddResultView.xib */,
 			);
 			name = CustomVIews;
+			sourceTree = "<group>";
+		};
+		B581201F1E9D471300A3F405 /* PresentationControls */ = {
+			isa = PBXGroup;
+			children = (
+				B50126191EB521C00094AFAA /* PresentationControl.swift */,
+			);
+			name = PresentationControls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +200,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B58120161E9D2C6B00A3F405 /* Factory.swift in Sources */,
+				B581201E1E9D465900A3F405 /* PresentationControllerViewControl.swift in Sources */,
 				B58120101E9D18B900A3F405 /* Database.swift in Sources */,
+				B501261A1EB521C00094AFAA /* PresentationControl.swift in Sources */,
 				B581201A1E9D2E8000A3F405 /* FactoryDIViewController.swift in Sources */,
 				B58120121E9D199300A3F405 /* SimpleDIViewController.swift in Sources */,
 				B58120071E9B865D00A3F405 /* NoDIViewController.swift in Sources */,
@@ -357,6 +373,7 @@
 				B58120011E9B83EC00A3F405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
