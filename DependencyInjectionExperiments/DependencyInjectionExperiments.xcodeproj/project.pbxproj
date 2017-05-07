@@ -24,6 +24,10 @@
 		B58120161E9D2C6B00A3F405 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58120151E9D2C6A00A3F405 /* Factory.swift */; };
 		B581201A1E9D2E8000A3F405 /* FactoryDIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58120191E9D2E8000A3F405 /* FactoryDIViewController.swift */; };
 		B581201E1E9D465900A3F405 /* PresentationControllerViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581201D1E9D465900A3F405 /* PresentationControllerViewControl.swift */; };
+		B5B94B2D1EBCFFCC005C136D /* PresentationControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50126191EB521C00094AFAA /* PresentationControl.swift */; };
+		B5B94B2F1EBCFFEC005C136D /* PresentationControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B94B2E1EBCFFEC005C136D /* PresentationControlTests.swift */; };
+		B5B94B321EBD05AD005C136D /* AddResultViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B94B311EBD05AD005C136D /* AddResultViewDelegate.swift */; };
+		B5B94B331EBD05AD005C136D /* AddResultViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B94B311EBD05AD005C136D /* AddResultViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,8 @@
 		B58120151E9D2C6A00A3F405 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		B58120191E9D2E8000A3F405 /* FactoryDIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FactoryDIViewController.swift; path = ViewControllers/FactoryDIViewController.swift; sourceTree = "<group>"; };
 		B581201D1E9D465900A3F405 /* PresentationControllerViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentationControllerViewControl.swift; path = ViewControllers/PresentationControllerViewControl.swift; sourceTree = "<group>"; };
+		B5B94B2E1EBCFFEC005C136D /* PresentationControlTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationControlTests.swift; sourceTree = "<group>"; };
+		B5B94B311EBD05AD005C136D /* AddResultViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddResultViewDelegate.swift; path = CustomViews/AddResultViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 			children = (
 				B50126351EB524820094AFAA /* Info.plist */,
 				B501263B1EB5249B0094AFAA /* BusinessLogicTests.swift */,
+				B5B94B2E1EBCFFEC005C136D /* PresentationControlTests.swift */,
 			);
 			path = DependencyInjectionExperimentsTests;
 			sourceTree = "<group>";
@@ -147,6 +154,7 @@
 				B581200B1E9B86F400A3F405 /* NibBacked.swift */,
 				B58120091E9B86BF00A3F405 /* AddResultView.swift */,
 				B581200D1E9B871300A3F405 /* AddResultView.xib */,
+				B5B94B311EBD05AD005C136D /* AddResultViewDelegate.swift */,
 			);
 			name = CustomVIews;
 			sourceTree = "<group>";
@@ -263,6 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B94B331EBD05AD005C136D /* AddResultViewDelegate.swift in Sources */,
+				B5B94B2D1EBCFFCC005C136D /* PresentationControl.swift in Sources */,
+				B5B94B2F1EBCFFEC005C136D /* PresentationControlTests.swift in Sources */,
 				B501263D1EB524E40094AFAA /* BusinessLogic.swift in Sources */,
 				B501263C1EB5249B0094AFAA /* BusinessLogicTests.swift in Sources */,
 			);
@@ -272,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B94B321EBD05AD005C136D /* AddResultViewDelegate.swift in Sources */,
 				B58120161E9D2C6B00A3F405 /* Factory.swift in Sources */,
 				B581201E1E9D465900A3F405 /* PresentationControllerViewControl.swift in Sources */,
 				B58120101E9D18B900A3F405 /* Database.swift in Sources */,
@@ -471,6 +483,7 @@
 				B50126391EB524820094AFAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5811FE81E9B83EC00A3F405 /* Build configuration list for PBXProject "DependencyInjectionExperiments" */ = {
 			isa = XCConfigurationList;

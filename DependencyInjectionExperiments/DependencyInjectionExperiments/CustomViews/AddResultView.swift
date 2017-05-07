@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol AddResultViewDelegate {
-    func add(value: Int) -> Void
-}
-
 @IBDesignable
 class AddResultView: NibView {
 
@@ -39,6 +35,6 @@ class AddResultView: NibView {
             textField.text = ""
         }
     }
-    
-    
 }
+
+extension AddResultView: AddResultViewProtocol { }

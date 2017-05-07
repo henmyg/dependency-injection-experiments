@@ -8,6 +8,12 @@
 
 import Foundation
 
+@objc
+protocol AddResultViewProtocol {
+    var result: Int { get set }
+    var delegate: AddResultViewDelegate? { get set }
+}
+
 @IBDesignable
 class PresentationControl: NSObject {
     
@@ -19,7 +25,7 @@ class PresentationControl: NSObject {
         }
     }
     
-    @IBOutlet weak var addResultView: AddResultView! {
+    @IBOutlet weak var addResultView: AddResultViewProtocol! {
         didSet {
             addResultView.delegate = self
         }
